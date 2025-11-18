@@ -1,9 +1,10 @@
  body {background-color:rgb(251, 251, 251);
-    
+       padding: 0;
+       margin: 0;     
 }
 
  
-h1 {color:brown;
+h1 {color:rgb(148, 3, 3);
     background-color:lightyellow;
     border-radius:20px;
     border-color:black;
@@ -14,8 +15,16 @@ h1 {color:brown;
     animation-iteration-count:infinite ;
     animation-timing-function:linear;
     animation-delay:1s;
-    transition-timing-function:ease-in-out;
-     
+    transition-timing-function:ease-in-out;          
+      text-align:center;      
+      font-size:60px;
+      font-family: 'Arial Black', sans-serif;
+      font-weight:bolder;
+      text-shadow:4px 4px 6px rgba(0, 0,
+      0, 0.2);
+      margin:5px;
+      padding:10px;
+
 }
 
 @keyframes zoom {
@@ -108,19 +117,22 @@ nav {text-align:center;
      background-color:rgb(127, 228, 181);
      font-family:georgia;
      font-weight:700;
-     padding-top:-4px;
+     padding-top:0;
+     color:rgb(0, 0, 0);
 }
 
 a {text-decoration:none;
    text-shadow:2% 2% 10px white;
+   color: rgb(6, 43, 31);
+   text-shadow:1px 1px 10px rgb(255, 248, 248);
 }
 
-a:link {color:rgba(232, 0, 0, 0.905);
+a:link {color:rgba(13, 39, 34, 0.905);
 }
 a:hover{color:hwb(0 100% 0%);
      text-shadow:1px 1px 3px black;
 }
-a:active{color:rgb(13, 70, 41);
+a:active{color:rgb(7, 39, 22);
     
 }
 
@@ -135,7 +147,8 @@ a:active{color:rgb(13, 70, 41);
       
  }
 
-#si1 {margin-left:2px;
+#si1 {margin-left:1px;
+      margin-right: 2px;
       border:1px solid black;
       padding:5px;
       border-radius:24px;  background:linear-gradient(12deg,black,white);
@@ -216,17 +229,71 @@ input[type="email"] {padding:5px;
 #trending {font-family:serif;
            font-weight:700;
            font-size:200%;
+           background-color: antiquewhite;
+           border-radius: 5px;
+           
+
+           
 }
 #old    {  font-family:serif;
            font-weight:700;
-           font-size:200%;      
+           font-size:200%; 
+           background-color: aqua; 
+           border-radius: 5px; 
            }
 
+.trendings {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px;
+      border: 2px solid rgb(0, 0, 0);
+      justify-content:center;
+      padding-bottom: 8px;
+      flex-shrink: 1;
+
+}
+.trends {
+      border: 4px solid rgb(255, 255, 255);
+      padding-left:1px;
+      margin: 10px 5px;
+      box-shadow: 2px 2px 10px black;
+      border-radius:5px;
+      width: 40%;
+      height: auto;
+      align-items: left;
+      flex-shrink: 2;
+      
+}
+.olds {
+      border: 4px solid rgb(255, 255, 255);
+      padding-left:1px;
+      margin: 10px 5px;
+      box-shadow: 2px 2px 10px black;
+      border-radius:5px;
+      width: 40%;
+      height: auto;
+      flex-wrap: nowrap;
+}
+.pron {
+      padding:8px;
+      margin-top:10px;
+      margin-bottom: 20px;
+      font-size:20px;
+      font-family:georgia;
+      font-weight:200;
+      list-style:none;
+      box-shadow:2px 3px 4px grey;
+      border-radius:12px;
+      background-color:rgb(255, 255, 255);
+      transition:transform 0.5s;
+      justify-content: center;
+}
+
+
 li {font-size:32px;
-    padding:10px;
+    padding:2px;
     transition:transform 2s;
     text-align: center;
-    position:relative;
     left:30px;
     font-family: Arial, Helvetica, sans-serif;
     list-style:none;
@@ -325,3 +392,6 @@ input[type="checkbox"]{
       background-image:(90deg,lightyellow,white);
       justify-content:space-around;
 }     
+form {
+      align-items: center;
+}
